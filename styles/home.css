@@ -1980,7 +1980,7 @@ body {
 
 @media (max-width: 768px) {
   #photo {
-      grid-template-columns: 1fr;
+/*       grid-template-columns: 1fr; */
   }
 
   .heading h1 {
