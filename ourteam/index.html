@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/23aa6d03dc.js" crossorigin="anonymous"></script>
+ <!-- <link rel="stylesheet" href="../styles/home.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+        /* team. . . . . . . . */
+
+
+:root{
+--primary: #e3851a;
+--secondary: #000000;
+--tertiary: #f0e5dc;
+--aboutusbg:rgba(255, 255, 255, 0.1);
+--mainfont:'Ubuntu';
+--logomainfont:'Source Serif 4';
+--logosecfont:'Lato';
+}
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #00c6ff);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #30ff00);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    color: white;
+}
+.vp{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 6px;
+    gap: none;
+}
+
+.vp h2{
+    font-size: 12px;
+}
+
+#team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    font-family: 'Ubuntu';
+}
+
+#team h1{
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 28px ;
+    font-size: 40px;
+    color: var(--tertiary);
+}
+
+.president {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid white; */
+}
+
+#Presidenttext{
+    margin-top: -20px;
+    color: var(--tertiary);
+}
+
+#team .vice-president{
+    /* border: 1px solid white; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.card{
+    transition: transform 1.2s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.core-team{
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 30px 0;
+}
+
+.technical-team{
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    position: relative;
+    /* display: grid;
+    grid-template-columns: repeat(4,1fr); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+.management-team{
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    position: relative;
+    /* display: grid;
+    grid-template-columns: repeat(4,1fr); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+.social-team{
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    position: relative;
+    /* display: grid; */
+    /* grid-template-columns: repeat(3,1fr); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+.treasury-team{
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin: 40px 0;
+}
+
+.publicity-team{
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    position: relative;
+    /* display: grid;
+    grid-template-columns: repeat(3,1fr); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.vice-president .card{
+    position: relative;
+    width: 250px;
+    height: 320px;
+    margin: 20px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
+    inset 0 0 0 1000px rgba(67, 52, 109, .6);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.president .card{
+    position: relative;
+    width: 280px;
+    height: 320px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
+    inset 0 0 0 1000px rgba(67, 52, 109, .6);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.core-team .card{
+    position: relative;
+    width: 280px;
+    height: 320px;
+    margin: 20px;
+    padding: auto;
+    overflow: hidden;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
+    inset 0 0 0 1000px rgba(67, 52, 109, .6);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.technical-team .card{
+    position: relative;
+    width: 280px;
+    height: 320px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
+    inset 0 0 0 1000px rgba(67, 52, 109, .6);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.management-team .card{
+    position: relative;
+    width: 280px;
+    height: 320px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
+    inset 0 0 0 1000px rgba(67, 52, 109, .6);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-team .card{
+    position: relative;
+    width: 280px;
+    height: 320px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
+    inset 0 0 0 1000px rgba(67, 52, 109, .6);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.treasury-team .card{
+    position: relative;
+    width: 280px;
+    height: 320px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
+    inset 0 0 0 1000px rgba(67, 52, 109, .6);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.publicity-team .card{
+    position: relative;
+    width: 280px;
+    height: 320px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
+    inset 0 0 0 1000px rgba(67, 52, 109, .6);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card .imbBx, .imbBx img{
+    width: 100%;
+    height: 100%;
+}
+
+.card .content{
+    position: absolute;
+    bottom: -160px;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: bottom 0.5s;
+    /* transition-delay: 0.65s; */
+}
+
+.card:hover .content{
+    bottom: 0;
+    transition-delay: 0s;
+}
+
+.content .contentBx h3{
+    text-transform: uppercase;
+    color: var(--tertiary);
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 15px;
+    line-height: 1.1em;
+    transition: 0.5s;
+    /* transition-delay: 0.6s; */
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.card:hover .content .contentBx h3{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content .contentBx h3 span{
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.content .sci{
+    position: relative;
+    bottom: 10px;
+    display: flex;
+}
+
+.content .sci li{
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: 0s;
+}
+
+.card:hover .content .sci li{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.content .sci li a{
+    color:var(--tertiary);
+    font-size: 24px;
+}
+
+@media screen and (max-width:1500px) {
+    .designation{
+        margin-top: -4px;
+        margin-bottom: 30px;
+    }
+    .core-team{
+        grid-template-columns: repeat(3,1fr);
+        width: fit-content;
+        margin: auto;
+    }
+    .core-team .card{
+        width: 300px;
+        height: 350px;
+    }
+    .technical-team{
+        grid-template-columns: repeat(3,1fr);
+        width: fit-content;
+        margin: auto;
+    }
+    .technical-team .card{
+        width: 300px;
+        height: 350px;
+    }
+    .management-team{
+        grid-template-columns: repeat(3,1fr);
+        width: fit-content;
+        margin: auto;
+    }
+    .management-team .card{
+        width: 300px;
+        height: 350px;
+    }
+    .social-team{
+        grid-template-columns: repeat(3,1fr);
+        width: fit-content;
+        margin: auto;
+    }
+    .social-team .card{
+        width: 300px;
+        height: 350px;
+    }
+    .publicity-team{
+        grid-template-columns: repeat(3,1fr);
+        width: fit-content;
+        margin: auto;
+    }
+    .publicity-team .card{
+        width: 300px;
+        height: 350px;
+    }
+}
+@media screen and (max-width:1060px) {
+    .core-team{
+        grid-template-columns: repeat(2,1fr);
+        width: fit-content;
+        margin: auto;
+    }
+    .core-team .card{
+        width: 300px;
+        height: 350px;
+    }
+    .technical-team{
+        grid-template-columns: repeat(2,1fr);
+        width: fit-content;
+        margin: auto;
+    }
+    .technical-team .card{
+        width: 300px;
+        height: 350px;
+    }
+    .management-team{
+        grid-template-columns: repeat(2,1fr);
+        width: fit-content;
+        margin: auto;
+    }
+    .management-team .card{
+        width: 300px;
+        height: 350px;
+    }
+    .social-team{
+        grid-template-columns: repeat(2,1fr);
+        width: fit-content;
+        margin: auto;
+    }
+    .social-team .card{
+        width: 300px;
+        height: 350px;
+    }
+    .publicity-team{
+        grid-template-columns: repeat(2,1fr);
+        width: fit-content;
+        margin: auto;
+    }
+    .publicity-team .card{
+        width: 300px;
+        height: 350px;
+    }
+    .vice-president .card{
+        width: 300px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #team .vice-president{
+        justify-content: center;
+        flex-direction: column;
+        /* margin-left: 2%; */
+    }
+    .core-team{
+        grid-template-columns: repeat(1,1fr);
+        width: fit-content;
+        /* margin: auto; */
+    }
+    .technical-team{
+        grid-template-columns: repeat(1,1fr);
+        width: fit-content;
+        /* margin: auto; */
+    }
+    .management-team{
+        grid-template-columns: repeat(1,1fr);
+        width: fit-content;
+        /* margin: auto; */
+    }
+    .social-team{
+        grid-template-columns: repeat(1,1fr);
+        width: fit-content;
+        /* margin: auto; */
+    }
+    .publicity-team{
+        grid-template-columns: repeat(1,1fr);
+        width: fit-content;
+        /* margin: auto; */
+    }
+    .president .card{
+        width: 300px;
+        height: 350px;
+    }
+    .vice-president .card{
+        width: 300px;
+        height: 350px;
+    }
+    .vice-president .card{
+        width: 300px;
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 1158px) and (max-width: 1450px) {
+    #team .vice-president{
+        /* border: 1px solid white; */
+        width: 1100px;
+    }
+}
+
+
+
+#navlogo{
+  
+  width: 2.5vw;
+  justify-self: start;
+  margin-left: 15%;
+}
+#navlogodiv{
+display: flex;
+gap: 1vw;
+width: 18vw;
+}
+#title{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+#clubname{
+font-size: 1.2vw;
+font-weight: 700;
+width: 100%;
+color: var(--primary);
+font-family: 'Ubuntu';
+box-sizing: border-box;
+margin: 0;
+}
+#clubmoto{
+font-family: 'Ubuntu';
+font-size: 0.67vw;
+margin: 0;
+color: var(--tertiary);
+}
+
+#mainnav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+#header {
+  background-color:var(--secondary);
+  padding: 10px 0px;
+  position: fixed;
+  box-shadow: 0vw 0vh 80px 50px var(--secondary);
+  z-index: 6;
+  width: 100%;
+}
+
+#navul {
+  list-style: none;
+  justify-self: self-start;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  width: 80%;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.navlinks {
+font-family: 'Ubuntu';
+  color: var(--tertiary);
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+
+.navlinks:hover{
+  color: var(--primary);
+}
+#hamburger {
+display: none;
+flex-direction: column;
+gap: 5px;
+cursor: pointer;
+z-index: 1001;
+margin-right: 5vw;
+transition: transform 0.3s ease-in-out;
+}
+#hamburger .line {
+width: 25px;
+height: 3px;
+background-color: var(--tertiary);
+transition: all 0.3s ease-in-out;
+}
+/* Animation for the hamburger menu */
+#hamburger.active .line:nth-child(1) {
+transform: translateY(8px) rotate(45deg);
+}
+
+#hamburger.active .line:nth-child(2) {
+opacity: 0;
+}
+
+#hamburger.active .line:nth-child(3) {
+transform: translateY(-8px) rotate(-45deg);
+}
+
+
+
+
+
+
+
+/* try....................... */
+
+
+.logo{
+width:15vw ;
+min-width: 80px;
+}
+#moto{
+color: var(--tertiary);
+
+font-size: 0.85vw;
+margin-top:0;
+
+} 
+.logo-container {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+display: flex;
+width: 100vw;
+height: 100vh;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+#home {
+  background-color:var(--secondary);
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  height:200vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  
+}
+#forgap{
+  height: 100vh;
+  width: 100vw;
+}
+#welcome{
+  position: absolute;
+  color: var(--primary);
+  font-family: 'Ubuntu';
+  font-size: clamp(50px,8vw,15vw);
+  z-index: 1006;
+  font-weight: 700;
+  top: 30%;
+
+}
+#welcomediv{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+    </style>
+    <header id="header">
+        <nav id="mainnav">
+            <div id="navlogodiv">
+                <img id="navlogo" src="./assets/images/horizontol logo .png" alt="logo">
+                <div id="title">
+                    <h1 id="clubname">HACKATHON CLUB</h1>
+                    <!-- <P id="clubmoto">CODE | CONQUER | COLLABORATE</P> -->
+                </div>
+            </div>
+            <div id="hamburger" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul id="navul">
+                <li><a class="navlinks" href="../index.html">Home</a></li>
+                <li><a class="navlinks" href="../index.html#AboutUs">About</a></li>
+                <li><a class="navlinks" href="../index.html#domain">Our Domains</a></li>
+                <li><a class="navlinks" href="../index.html#Events">Events</a></li>
+                <li><a class="navlinks" href="../index.html#memories">Memories</a></li>
+                <li><a class="navlinks" href="../index.html#team">Team</a></li>
+                <li><a class="navlinks" href="../index.html#ContactUs">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <title>Our Teamt</title>
+    
+    <section id="team">
+
+        <h1> Our Team</h1>
+
+        <!-- President Card-->
+        <div class="president fade-in">
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="./assets/images/Rahul Gawade.jpg" alt="">
+
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Rahul Gawade<br><span>Full Stack Developer</span><br><span>President</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="https://www.google.com"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h1 id="Presidenttext" style="font-size: 35px">President</h1>
+        </div>
+
+        <!-- Team Leaders Card -->
+        <div class="vice-president fade-in">
+            <div class="vp">
+
+                <div class="card">
+                    <div class="imbBx">
+                        <img src="./assets/images/Bhavar.jpg" alt="">
+                    </div>
+
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Aditya Bhavar<br><span>Full Stack Developer</span></h3>
+                        </div>
+                        <ul class="sci">
+                            <li style="--i: 2">
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                            </li>
+                            <li style="--i: 3">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <h1 id="Presidenttext">Vice President</h1> -->
+
+                </div>
+                <div class="designation">
+                    <h1 style="color: white; font-size: 28px;">Vice President</h1>
+                    <h2 style="color: white; font-size: 24px;">Technical Head</h1>
+                </div>
+            </div>
+
+            <div class="vp">
+                <div class="card">
+
+                    <div class="imbBx">
+                        <img src="./assets/images/Siddharth.jpg" alt="">
+                    </div>
+
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Siddharth Basale<br><span>Machine Learning Expert</span></h3>
+                        </div>
+                        <ul class="sci">
+                            <li style="--i: 2">
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                            </li>
+                            <li style="--i: 3">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="designation">
+                    <h1 style="color: white; font-size: 28px;">Vice President</h1>
+                    <h2 style="color: white; font-size: 25px;">Management Head</h1>
+                </div>
+
+            </div>
+
+            <div class="vp">
+                <div class="card">
+
+                    <div class="imbBx">
+                        <img src="./assets/images/" alt="">
+                    </div>
+
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Sushil Phadtare<br><span>Front-End Web Developer</span></h3>
+                        </div>
+                        <ul class="sci">
+                            <li style="--i: 2">
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                            </li>
+                            <li style="--i: 3">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="designation">
+                    <h1 style="color: white; font-size: 24px;">Social Media Head</h1>
+                </div>
+
+            </div>
+
+            <div class="vp">
+                <div class="card">
+
+                    <div class="imbBx">
+                        <img src="./assets/images/Dynaneshwari Jadhavar.jpg" alt="">
+                    </div>
+
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Dnyaneshwari Jadhawar<br><span>Data Science Enthusiast</span></h3>
+                        </div>
+                        <ul class="sci">
+                            <li style="--i: 2">
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                            </li>
+                            <li style="--i: 3">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="designation">
+                    <h1 style="color: white; font-size: 24px;">Treasury Head</h1>
+                </div>
+            </div>
+
+            <div class="vp">
+                <div class="card">
+
+                    <div class="imbBx">
+                        <img src="./assets/images/Amruta (2).jpg" alt="">
+                    </div>
+
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Amruta Pawar<br><span>Machine Learning Enthusiast</span></h3>
+                        </div>
+                        <ul class="sci">
+                            <li style="--i: 2">
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                            </li>
+                            <li style="--i: 3">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="designation">
+                    <h1 style="color: white; font-size: 24px;">Publicity Head</h1>
+                </div>
+            </div>
+        </div>
+
+        <h1>Core Team </h1>
+
+        <!-- Core Team Members -->
+        <div class="core-team fade-in">
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="./assets/images/WhatsApp Image 2024-12-24 at 20.44.48_16079bb5.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Vrushali More<br><span>Full Stack Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="./assets/images/Chaitanya.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Chaitanya Malshikhre<br><span>Android Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="./assets/images/WhatsApp Image 2024-12-24 at 20.44.48_16079bb5.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Sheshrao Gund<br><span>Full Stack Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="./assets/images/WhatsApp Image 2024-12-24 at 20.44.48_16079bb5.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Sanket Shinde<br><span>Full Stack Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="./assets/images/WhatsApp Image 2024-12-24 at 20.44.48_16079bb5.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Vaishnavi Rayker <br><span>Full Stack Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="./assets/images/WhatsApp Image 2024-12-24 at 20.44.48_16079bb5.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Amit More<br><span>Full Stack Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Technical Team Members -->
+
+        <h1>Technical Team</h1>
+        <div class="technical-team fade-in">
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="./assets/images/Rushikesh.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Rushikesh Raut<br><span>Full Stack Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="./assets/images/WhatsApp Image 2024-12-24 at 20.44.48_16079bb5.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Chinmay Dhokey<br><span>Front-End Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="./assets/images/Namrata.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Namrata Ghayal<br><span>Front-End Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="./assets/images/Sakshi.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Sakshi Gore<br><span>Machine Learning</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="./assets/images/Tanuja Saste.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Tanuja Saste<br><span>Front-End Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="assets/images/Ganesh.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Ganesh Sonawane<br><span>Machine Learning</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="assets/images/Gayatri Darwade.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Gayatri Darwade<br><span>Machine Learning</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="WhatsApp Image 2024-12-24 at 20.44.48_16079bb5.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Abhay Chachar<br><span>Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Management Team Members -->
+
+        <h1>Management Team</h1>
+        <div class="management-team fade-in">
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="assets/images/Sakshi Sabale.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Sakshi Sabale<br><span>Full-Stack Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="assets/images/Mrunal Tambe.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Mrunal Tambe<br><span>Full-Stack Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="WhatsApp Image 2024-12-24 at 20.44.48_16079bb5.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Prathamesh Gursal<br><span>Full-Stack Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="assets/images/Prathamesh Madane.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Prathamesh Madane <br><span>Block-Chain Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="WhatsApp Image 2024-12-24 at 20.44.48_16079bb5.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Anant Patil<br><span>Machine Learning</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="WhatsApp Image 2024-12-24 at 20.44.48_16079bb5.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Abhishekh Kachare<br><span>Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="WhatsApp Image 2024-12-24 at 20.44.48_16079bb5.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Ashish Abhang<br><span>Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Social Media Team -->
+        <h1>Social Media Team</h1>
+
+        <div class="social-team fade-in">
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="assets/images/Ajinkya.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Ajinkya Kokate<br><span>Machine Learning</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="assets/images/Sanika.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Sanika Mandlik<br><span>Front-End Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="WhatsApp Image 2024-12-24 at 20.44.48_16079bb5.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Vedant Parmane<br><span>Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Treasury Team -->
+        <h1>Treasury Team</h1>
+
+        <div class="treasury-team fade-in">
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="WhatsApp Image 2024-12-24 at 20.44.48_16079bb5.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Shreya Kale<br><span>Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Publicity Team -->
+        <h1>Publicity Team</h1>
+
+        <div class="publicity-team fade-in">
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="WhatsApp Image 2024-12-24 at 20.44.48_16079bb5.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Ashwini Thikole<br><span>Full Stack Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="WhatsApp Image 2024-12-24 at 20.44.48_16079bb5.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Mayuri Falke<br><span>Full-Stack Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="WhatsApp Image 2024-12-24 at 20.44.48_16079bb5.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Aditya Madane<br><span>Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+</body>
+</html>
