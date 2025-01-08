@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     const interface = document.getElementById("relode");
 
-     // Disable scrolling
-  // document.body.style.overflow = "hidden";
+    //  Disable scrolling
+    document.body.style.overflow = "hidden";
 
   
     // Fade out the interface after 2 seconds
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
       interface.classList.add("hide");
 
       // Enable scrolling
-    document.body.style.overflow = "hide";
+    document.body.style.overflow = "auto";
     }, 2000); // Adjust the delay as needed
   });
 
@@ -37,7 +37,7 @@ for (let i = 0; i < starCount; i++) {
   star.style.height = `${size}px`;
 
   // Random initial position
-  star.style.top = `${Math.random() * 1410}%`;
+  star.style.top = `${Math.random() * 910}%`;
   star.style.left = `${Math.random() * 99}%`;
 
   // Random animation duration (no delay)
@@ -50,15 +50,48 @@ for (let i = 0; i < starCount; i++) {
 
 
 // ham . . . . 
-function toggleMenu() {
-    const navLinks = document.getElementById('navul');
-    const hamburger = document.getElementById('hamburger');
+const navbar = document.getElementById("navbar");
+const hamburger = document.getElementById("hamburger");
+const navbarNavMobile = document.getElementById("navbarNavMobile");
+let lastScrollTop = 0;
 
-    // Toggle active class for both menu and hamburger icon
-    navLinks.classList.toggle('active');
-    hamburger.classList.toggle('active');
-}
+// Show/Hide Navbar on Scroll
+window.addEventListener("scroll", () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
+    if (scrollTop > lastScrollTop) {
+        navbar.classList.add("navbar-hidden");
+    } else {
+        navbar.classList.remove("navbar-hidden");
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scrolling
+});
+
+// Toggle Hamburger Menu
+hamburger.addEventListener("click", () => {
+    navbarNavMobile.classList.toggle("active");
+});
+
+// Dropdown Functionality for Desktop (Click)
+const dropdownLinkDesktop = document.querySelector('.navbar-nav.desktop .nav-item.dropdown');
+const dropdownMenuDesktop = dropdownLinkDesktop.querySelector('.dropdown-menu');
+
+// Click functionality for dropdown in desktop view
+dropdownLinkDesktop.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent the default anchor behavior
+    dropdownMenuDesktop.classList.toggle('active'); // Toggle visibility
+});
+
+// Dropdown Functionality for Mobile (Click)
+const dropdownLinkMobile = document.querySelector('.navbar-nav.mobile .nav-item.dropdown');
+const dropdownMenuMobile = dropdownLinkMobile.querySelector('.dropdown-menu');
+
+// Toggle the dropdown on click (in mobile menu)
+dropdownLinkMobile.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent the default anchor behavior
+    dropdownMenuMobile.classList.toggle('active'); // Toggle visibility
+});
 
 
 
@@ -92,23 +125,6 @@ gsap.timeline({
     { scale: 2, opacity: 0, duration: 1 } // Scale up further and fade out
 );
 
-// Create the scroll-based animation
-gsap.timeline({
-    scrollTrigger: {
-        trigger: "#welcome", // Element to track
-        start: "top bottom", // When the top of the element hits the bottom of the viewport
-        end: "bottom top", // When the bottom of the element leaves the viewport
-        scrub: true, // Smooth animation tied to scroll
-        markers: false, // Set to true for debug markers
-    },
-})
-.fromTo("#welcome", 
-    { scale: 0.5, opacity: 0,duration: 0  }, // Initial state
-    { scale: 1, opacity: 1, duration: 1 } // Scale up and fade in
-)
-.to("#welcome", 
-    { scale: 1.5, opacity: 0, duration: 1 } // Scale up further and fade out
-);
 
 // js for events
 document.addEventListener("DOMContentLoaded", () => {

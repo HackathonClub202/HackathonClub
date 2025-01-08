@@ -29,34 +29,47 @@
 
     
     <section id="home" class="star-container">
-        <header id="header">
-            <nav id="mainnav">
-                <div id="navlogodiv"><a href="#">
-
-                    
-                    <img id="navlogo" src="./assets/images/horizontol logo .png" alt="logo">
-                    <div id="title">
-                        <h1 id="clubname">HACKATHON CLUB</h1>
-                        <!-- <P id="clubmoto">CODE | CONQUER | COLLABORATE</P> -->
-                    </a>
-                    </div>
-                </div>
-                <div id="hamburger" onclick="toggleMenu()">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-                <ul id="navul">
-                    <!-- <li><a class="navlinks" href="#home">Home</a></li> -->
-                    <li><a class="navlinks" href="#AboutUs">About</a></li>
-                    <li><a class="navlinks" href="#domain">Our Domains</a></li>
-                    <li><a class="navlinks" href="#Events">Events</a></li>
-                    <li><a class="navlinks" href="#memories">Memories</a></li>
-                    <li><a class="navlinks" href="./ourteam//index.html">Team</a></li>
-                    <li><a class="navlinks" href="#ContactUs">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        <nav id="navbar" class="navbar">
+            <a class="navbar-brand">
+                <img src="./assets/images/horizontol logo .png" alt="Logo">
+                <h4>HACKATHON CLUB</h4>
+            </a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navbar-nav desktop" id="navbarNavDesktop">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">Domains</a></li>
+                <li class="nav-item"><a href="service.html" class="nav-link">Events</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Memories+</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="team.html" class="dropdown-item">Timeline</a></li>
+                        <li><a href="testimonial.html" class="dropdown-item">Photo Gallery</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="project.html" class="nav-link">Team</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <ul class="navbar-nav mobile" id="navbarNavMobile">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">Domains</a></li>
+                <li class="nav-item"><a href="service.html" class="nav-link">Events</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Memories</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="team.html" class="dropdown-item">Timeline</a></li>
+                        <li><a href="testimonial.html" class="dropdown-item">Photo Gallery</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="project.html" class="nav-link">Team</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
 
 
         <div id="forgap">
