@@ -1925,7 +1925,7 @@ body {
   
 }
 .card-back:hover p {
-  color: #fff ; /* Highlighted text color */
+  color: #fff; /* Highlighted text color */
 }
 
 /* Front and Back Faces */
@@ -1980,8 +1980,7 @@ body {
 
 @media (max-width: 768px) {
   #photo {
-      /* grid-template-columns: 1fr; */
-
+/*       grid-template-columns: 1fr; */
   }
 
   .heading h1 {
