@@ -318,11 +318,11 @@ body {
     #moto{
       font-size: 1.7vw;
     }
-    .hamburger {
+.hamburger {
       display: flex; /* Show hamburger menu on smaller screens */
   }
 
-  .navbar-nav {
+  .navbar-na    v {
       display: none; /* Hide the main menu on small screens */
   }
 
